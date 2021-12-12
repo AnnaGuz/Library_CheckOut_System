@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="385.0" prefWidth="525.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="ui.AddAuthorController">
+  <children>
+    <GridPane prefHeight="153.0" prefWidth="490.0" AnchorPane.bottomAnchor="91.89" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="55.11">
+      <children>
+        <Label text="First Name" />
+        <Label id="Last Name" text="Last Name" GridPane.rowIndex="1" />
+        <Label text="Telephone" GridPane.rowIndex="7" />
+        <Label text="Bio" GridPane.rowIndex="8" />
+        <TextField id="" fx:id="firstName" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+        <TextField id="" fx:id="lastName" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+        <TextField id="" fx:id="telephone" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+        <TextField id="" fx:id="bio" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+        <Label prefWidth="110.0" text="Address:" GridPane.columnIndex="0" GridPane.rowIndex="2">
+          <GridPane.margin>
+            <Insets left="40.0" />
+          </GridPane.margin>
+        </Label>
+        <Label text="Street:" GridPane.columnIndex="0" GridPane.rowIndex="3">
+          <GridPane.margin>
+            <Insets left="60.0" fx:id="x1" />
+          </GridPane.margin>
+        </Label>
+        <Label text="City:" GridPane.columnIndex="0" GridPane.margin="$x1" GridPane.rowIndex="4" />
+        <Label text="State" GridPane.columnIndex="0" GridPane.margin="$x1" GridPane.rowIndex="5" />
+        <Label text="ZipCode:" GridPane.columnIndex="0" GridPane.margin="$x1" GridPane.rowIndex="6" />
+        <TextField fx:id="streetField" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+        <TextField fx:id="cityField" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+        <TextField fx:id="stateField" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+        <TextField fx:id="postalCodeField" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+      </children>
+      <columnConstraints>
+        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+      </columnConstraints>
+      <rowConstraints>
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      </rowConstraints>
+    </GridPane>
+    <Button layoutX="234.0" mnemonicParsing="false" onAction="#handleOk" prefWidth="72.0" text="OK" textOverrun="CLIP" AnchorPane.bottomAnchor="29.0" />
+    <Button mnemonicParsing="false" onAction="#handleCancel" prefWidth="72.0" text="Cancel" AnchorPane.bottomAnchor="29.0" AnchorPane.rightAnchor="105.0" />
+    <Label layoutX="192.0" layoutY="14.0" text="Add Author:">
+      <font>
+        <Font size="18.0" />
+      </font>
+    </Label>
+  </children>
+</AnchorPane>

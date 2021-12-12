@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="480.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2">
+  <!-- TODO Add Nodes -->
+  <children>
+    <TextArea layoutX="77.0" layoutY="98.0" prefHeight="279.0" prefWidth="309.0" text="About:&#10;&#10;This Library Management system beta version&#10;tools:&#10;javafx&#10;css&#10;scene builder&#10;fxml" wrapText="true" />
+    <ImageView fitHeight="76.0" fitWidth="280.9999694824219" layoutX="91.0" layoutY="22.0" pickOnBounds="true" preserveRatio="false">
+      <image>
+        <Image url="@library-management-system-500x500.jpg" />
+      </image>
+    </ImageView>
+  </children>
+</AnchorPane>

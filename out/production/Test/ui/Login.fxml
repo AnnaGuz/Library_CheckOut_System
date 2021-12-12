@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="505.0" prefWidth="643.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="business.SystemController">
+  <!-- TODO Add Nodes -->
+  <children>
+    <SplitPane dividerPositions="0.5382215288611545" focusTraversable="true" layoutX="0.0" layoutY="0.0" prefHeight="505.0" prefWidth="643.0" style="">
+      <items>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+          <children>
+            <ImageView fitHeight="501.05999755859375" fitWidth="386.0" layoutX="0.0" layoutY="0.0" pickOnBounds="true" preserveRatio="false" smooth="false">
+              <image>
+                <Image url="@library-management-system-500x500.jpg" />
+              </image>
+            </ImageView>
+          </children>
+        </AnchorPane>
+        <AnchorPane id="anchor1" minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+          <children>
+            <GridPane layoutX="14.0" layoutY="162.0" prefWidth="265.0" vgap="10.0">
+              <children>
+                <Label text="User Name" GridPane.columnIndex="0" GridPane.rowIndex="0">
+                  <textFill>
+                    <Color blue="1.000" green="0.928" red="0.800" fx:id="x1" />
+                  </textFill>
+                </Label>
+                <Label text="Password" textFill="$x1" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+                <TextField id="usernaame" fx:id="username" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+                <PasswordField fx:id="password" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                <Button mnemonicParsing="false" onAction="#login" prefWidth="74.0" text="Login" GridPane.columnIndex="0" GridPane.rowIndex="3">
+                  <GridPane.margin>
+                    <Insets left="10.0" right="10.0" />
+                  </GridPane.margin>
+                </Button>
+                <Button mnemonicParsing="false" onAction="#handleCancel" text="Cancel" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                  <GridPane.margin>
+                    <Insets left="10.0" />
+                  </GridPane.margin>
+                </Button>
+              </children>
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="132.0" minWidth="10.0" prefWidth="109.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="156.0" minWidth="10.0" prefWidth="156.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+            </GridPane>
+            <Label layoutX="-17.0" layoutY="47.0" prefHeight="83.0" prefWidth="300.0" text="      Library Management System" textAlignment="CENTER" textFill="#ccf9ff" textOverrun="WORD_ELLIPSIS">
+              <font>
+                <Font name="Comic Sans MS" size="18.0" />
+              </font>
+            </Label>
+          </children>
+        </AnchorPane>
+      </items>
+    </SplitPane>
+  </children>
+  <stylesheets>
+    <URL value="@library.css" />
+  </stylesheets>
+</AnchorPane>
